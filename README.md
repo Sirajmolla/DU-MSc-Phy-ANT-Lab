@@ -11,15 +11,25 @@ We have been advised to follow the book **[Numerical Analysis Richard L Burden a
 ## Table of Contents
 ### Programs
 
-- Assignment 01
+- Assignment 01 : Matrices
   - [All in one (PDF)](assignment-1/assignment-1-sol-all-in-one.pdf)
   - [Source codes](assignment-1/)
 
-- Assignment 02
+- Assignment 02 : Integration
   - [All in one (PDF)](assignment-2/assignment-2-sol-all-in-one.pdf)
   - [Source codes](assignment-2/)
 
-- Assignment 03
+- Assignment 03 : Interpolation and Polynomial Approximation
+  - [All in one (PDF)](assignment-3/assignment-3-sol-all-in-one.pdf)
+  - [Source codes](assignment-3/)
+
+- Assignment 04 : Direct Methods for Solving Linear Systems
+  - [All in one (PDF)](assignment-4/assignment-4-sol-all-in-one.pdf)
+  - [Source codes](assignment-4/)
+
+- Assignment 05 :
+  - [All in one (PDF)](assignment-5/assignment-5-sol-all-in-one.pdf)
+  - [Source codes](assignment-5/)
 
 ## Do you want to download all the codes at once?
 ### For Linux user:
@@ -40,3 +50,6 @@ If you've any doubt or suggestions regarding the project, please feel free to re
 
 ## Licence
 [MIT License](https://github.com/singhnir/DU-MSc-Phy-ANT-Lab/blob/main/LICENSE)
+
+## Keywords:
+arrays, matrices, matrix operations, integration, trapezoidal rule, simpson's rule,  gauss quadrature, bisection method, secant method, interpolation, lagrange method neville method, interpolation and polynomial approximation, linear system of equations, gauss elimination method, gauss elimination with chopping rounding and pivoting strategy, gauss jordan, inverse of a matrix.
