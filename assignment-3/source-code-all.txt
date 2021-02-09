@@ -1,0 +1,163 @@
+// SHEET 1//
+
+// sheet 1 problem 1
+// make sure "interpolation.c" file is in the same directory
+#include<stdio.h>
+#include<math.h>
+#include"interpolation.c"
+int main()
+{
+    int i;
+    FILE*fp=NULL;
+    fp=fopen("prob1.txt","w");
+    // initialing array for table 1
+	double X1[]={0.5,5,10};
+	double Y1[]={2,0.2,0.1};
+	// initialing array for table 2
+	double X2[]={0.5,1,2,4,5,8,10};
+	double Y2[]={2,1,0.5,0.25,0.2,0.125,0.1};
+	double x=3;  //value of x for which interpolated value is required
+
+    printf("For table I the interpolated value at x=3 is %lf",lag(3,X1,Y1,x));
+    printf("\nFor table II the interpolated value at x=3 is %lf",lag(7,X2,Y2,x));
+
+    for (x=0.5;x<=10;x+=0.1)
+    {
+    	fprintf(fp,"%lf\t%lf\t%lf\t%lf\n",x,lag(3,X1,Y1,x),lag(7,X2,Y2,x),1/x);
+    }
+}
+
+
+
+
+// SHEET 2//
+
+// sheet 2 problem 1
+// make sure "interpolation.c" file is in the same directory
+#include<stdio.h>
+#include<math.h>
+#include"interpolation.c"
+#define pi 3.141592
+
+int main()
+{
+	int i,n=3;
+ 	double x[]={1,1.25,1.6};
+ 	double y[n],X=1.4;
+
+ 	printf("[Part a] f(x)=sin(pi*x)\n");
+ 	for(i=0;i<n;i++)
+ 	{
+ 		y[i]=sin(pi*x[i]);
+ 	}
+ 	printf("\nP2(x)=%f\n",lag(n,x,y,X));
+ 	printf("with error:%f\n",fabs(lag(n,x,y,X)-sin(pi*X)));
+
+ 	printf("\n[Part b] f(x)=pow(x-1,0.3333)\n");
+ 	for(i=0;i<n;i++) 
+ 	{
+ 		y[i]=pow(x[i]-1,0.3333);
+ 	}
+
+ 	printf("\nP2(x)=%f\n",lag(n,x,y,X));
+ 	printf("with error:%f\n",fabs(lag(n,x,y,X)-pow(X-1,0.3333)));
+ 	
+ 	printf("\n[Part c] f(x)=log10(3*x-1)\n");
+ 	for(i=0;i<n;i++)
+ 	{
+ 		y[i]=log10(3*x[i]-1);
+ 	}
+ 	printf("\nP2(x)=%f\n",lag(n,x,y,X));
+ 	printf("with error:%f\n",fabs(lag(n,x,y,X)-log10(3*X-1)));
+
+ 	printf("[Part d] f(x)=exp(2*x)-x\n");
+ 	for(i=0;i<n;i++)
+ 	{
+ 	y[i]=exp(2*x[i])-x[i];
+ 	}
+
+ 	printf("\nP2(x)=%f\n",lag(n,x,y,X)); 
+ 	printf("with error:%f\n",fabs(lag(n,x,y,X)-(exp(2*X)-X)));
+
+}
+
+
+// sheet 2 problem 2
+// make sure "interpolation.c" file is in the same directory
+#include <stdio.h>
+#include <math.h>
+#include"interpolation.c"
+
+int main()
+{
+	int i,n=4;
+    double X=1.5,err1,err2;
+	double x1[]={-2,-1,0,1,2};
+	double x2[]={0,1,2,4,5};
+    double a[n],b[n];
+    for(i=0;i<n;i++)
+    {
+        a[i]=pow(3,x1[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        b[i]=pow(x2[i],0.5);
+    }
+	printf("Using Neville the approx. value for part (a): %lf and for part (b): %lf\n",nev(n,x1,a,X),nev(n,x2,b,X));
+	// calculating the abs error
+    err1=fabs(nev(n,x1,a,X)-pow(3,X));
+    err2=fabs(nev(n,x2,b,X)-pow(X,0.5));
+	printf("and the accuracy in part (a): %lf and in part (b): %lf\n",err1,err2);
+}
+
+
+
+// sheet 2 problem 4
+// make sure "interpolation.c" file is in the same directory
+#include<stdio.h>
+#include<math.h>
+#include"interpolation.c"
+
+int main()
+{
+    int i,n=3;
+    double X=0,root[10];
+    // initialing array for given table
+    double x[]={0.3,0.4,0.5,0.6};
+    double ex[]={0.740818,0.670320,0.606531,0.548812};
+    for(i=0;i<=n;i++)
+    {
+        root[i]=x[i]-ex[i];
+    }
+    printf("The approx. soltion is: %f\n",nev(n,root,x,X));
+}
+
+
+
+
+
+// SHEET 3//
+// sheet 3 problem 1 & 2
+// make sure "interpolation.c" file is in the same directory
+#include<stdio.h>
+#include<math.h>
+#include"interpolation.c"
+
+int main()
+{
+    int i;
+    double x;
+    FILE*fp=NULL;
+    FILE*fp1=NULL;
+    fp=fopen("prob2lag.txt","w");   // using lagrange
+    fp1=fopen("prob2nev.txt","w");  // using neville
+    // initialing array for given table
+    double X[]={1,4,5,10};
+    double Y[]={1,0.25,0.2,0.1};
+    // getting data to plot the function
+    for (x=0.5;x<=10;x+=0.1)
+    {
+        fprintf(fp,"%lf\t%lf\t%lf\t%lf\t%lf\n",x,lag(2,X,Y,x),lag(3,X,Y,x),lag(4,X,Y,x),1/x);
+        fprintf(fp1,"%lf\t%lf\t%lf\t%lf\t%lf\n",x,nev(2,X,Y,x),nev(3,X,Y,x),nev(4,X,Y,x),1/x);
+    }
+}
