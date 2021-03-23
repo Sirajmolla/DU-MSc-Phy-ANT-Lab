@@ -6,7 +6,7 @@
 
 As per our university syllabus, "This Lab course is designed to develop computer programming skills (primarily C/C++ based) for implementing advanced numerical methods like Interpolation, Solution of Linear Equations, Monte Carlo Methods, Curve-Fitting techniques etc. Throughout the semester work on a project oriented problem based on developing algorithm for any generalized numerical method which may be related with any of the topics covered in theory classes."
 
-We have been advised to follow the book **[Numerical Analysis Richard L Burden and J Douglas Faires](https://drive.google.com/file/d/1NZusaD5_vE2Yu1isd4G9M8Fesh6uCxBW/view?usp=sharing)** and to practice the problems we are getting assignments every week and here I'll commit the programs once I successfully compile and get the desired output after the submission deadline ofcourse.<br>
+We have been advised to follow the book **[Numerical Analysis Richard L Burden and J Douglas Faires](https://drive.google.com/file/d/1fdBtEVCK7dTVKzY328ImfpEQeytJ7cBW/view?usp=sharing)** and to practice the problems we are getting assignments every week and here I'll commit the programs once I successfully compile and get the desired output after the submission deadline ofcourse.<br>
 ***This repository is under progress.***
 ## Table of Contents
 ### Programs
@@ -27,9 +27,18 @@ We have been advised to follow the book **[Numerical Analysis Richard L Burden a
   - [All in one (PDF)](assignment-4/assignment-4-sol-all-in-one.pdf)
   - [Source codes](assignment-4/)
 
-- Assignment 05 :
+- Assignment 05 : Cubic Spline Interpolation
   - [All in one (PDF)](assignment-5/assignment-5-sol-all-in-one.pdf)
   - [Source codes](assignment-5/)
+
+- Assignment 06 :  Least Square Fitting
+  - [All in one (PDF)](assignment-6/assignment-6-sol-all-in-one.pdf)
+  - [Source codes](assignment-6/)
+
+- Assignment 07 : Random Number Generation
+    - [All in one (PDF)](assignment-7/assignment-7-sol-all-in-one.pdf)
+    - [Source codes](assignment-7/)
+    - Class Work March 18 : [Monte Carlo Simulation for Pi in pdf](assignment-7/class-work-march-18/monte-carlo-simulation-for-pi) and [Source codes](assignment-7/class-work-march-18/).
 
 ## Do you want to download all the codes at once?
 ### For Linux user:
@@ -43,8 +52,12 @@ Normally no windows has git preinstalled so previous command doesn't work on it 
 * GCC Compiler
 * Gnuplot
 
+## Similiar Repositories
+* [DU-MSc-Lab-C-Prog](https://github.com/singhnir/DU-MSc-Lab-C-Prog) : This is my another similiar repository for the subject Computational Physics (Lab) - Course Code: PH-CL502 which I have completed in my M.Sc. Physics Semester: III course from University of Delhi.
+* [Numerical Methods in C Language](#) : Since all of my previous repositories were specific problem oriented hence I decided to rewrite the program more in a general way so that everyone can use them wihout any hesitation.
+
 ## Contact
-If you've any doubt or suggestions regarding the project, please feel free to reach out by filing an issue here on github or you can simply email me at [nirsingh124@gmail.com](mailto:nirsingh124@gmail.com). You can also drop a message to my [Telegram](https://t.me/singhnirmal) account.
+If you've any doubt or suggestions regarding the project, please feel free to reach out by filing an issue here on github or you can simply email me at [nirsingh124@gmail.com](mailto:nirsingh124@gmail.com). You can also drop a message to my [Telegram](https://t.me/singhnir) account.
 
 ## Acknowledgements
 
@@ -52,4 +65,4 @@ If you've any doubt or suggestions regarding the project, please feel free to re
 [MIT License](https://github.com/singhnir/DU-MSc-Phy-ANT-Lab/blob/main/LICENSE)
 
 ## Keywords:
-arrays, matrices, matrix operations, integration, trapezoidal rule, simpson's rule,  gauss quadrature, bisection method, secant method, interpolation, lagrange method neville method, interpolation and polynomial approximation, linear system of equations, gauss elimination method, gauss elimination with chopping rounding and pivoting strategy, gauss jordan, inverse of a matrix.
+arrays, matrices, matrix operations, integration, trapezoidal rule, simpson's rule,  gauss quadrature, bisection method, secant method, interpolation, lagrange method neville method, interpolation and polynomial approximation, linear system of equations, gauss elimination method, gauss elimination with chopping rounding and pivoting strategy, gauss jordan, inverse of a matrix, cubic splines, clamped splines, least square fitting, polynomial fitting, chi-square test, chi-square minimization, random numbers, uniform distribution, frequency distribution, monte-carlo simulation, value of pi, area of circle, statistical mean and standard deviation.
