@@ -38,7 +38,7 @@ We have been advised to follow the book **[Numerical Analysis Richard L Burden a
 - Assignment 07 : Random Number Generation
     - [All in one (PDF)](assignment-7/assignment-7-sol-all-in-one.pdf)
     - [Source codes](assignment-7/)
-    - Class Work March 18 : [Monte Carlo Simulation for Pi in pdf](assignment-7/class-work-march-18/monte-carlo-simulation-for-pi) and [Source codes](assignment-7/class-work-march-18/).
+    - Class Work March 18 : [Monte Carlo Simulation for Pi in pdf](assignment-7/class-work-march-18/monte-carlo-simulation-for-pi.pdf) and [Source codes](assignment-7/class-work-march-18/).
 
 ## Do you want to download all the codes at once?
 ### For Linux user:
