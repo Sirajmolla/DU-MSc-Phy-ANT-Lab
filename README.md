@@ -6,8 +6,8 @@
 
 As per our university syllabus, "This Lab course is designed to develop computer programming skills (primarily C/C++ based) for implementing advanced numerical methods like Interpolation, Solution of Linear Equations, Monte Carlo Methods, Curve-Fitting techniques etc. Throughout the semester work on a project oriented problem based on developing algorithm for any generalized numerical method which may be related with any of the topics covered in theory classes."
 
-We have been advised to follow the book **[Numerical Analysis Richard L Burden and J Douglas Faires](https://drive.google.com/file/d/1fdBtEVCK7dTVKzY328ImfpEQeytJ7cBW/view?usp=sharing)** and to practice the problems we are getting assignments every week and here I'll commit the programs once I successfully compile and get the desired output after the submission deadline ofcourse.<br>
-***This repository is under progress.***
+We have been advised to follow the book **[Numerical Analysis Richard L Burden and J Douglas Faires](https://fac.ksu.edu.sa/sites/default/files/numerical_analysis_9th.pdf)** and to practice the problems we are getting assignments every week and here I'll commit the programs once I successfully compile and get the desired output after the submission deadline ofcourse.
+
 ## Table of Contents
 ### Programs
 
@@ -58,13 +58,14 @@ Normally no windows has git preinstalled so previous command doesn't work on it 
 
 ## Similiar Repositories
 * [DU-MSc-Lab-C-Prog](https://github.com/singhnir/DU-MSc-Lab-C-Prog) : This is my another similiar repository for the subject Computational Physics (Lab) - Course Code: PH-CL502 which I have completed in my M.Sc. Physics Semester: III course from University of Delhi.
-* [Numerical Methods in C Language](#) : Since all of my previous repositories were specific problem oriented hence I decided to rewrite the program more in a general way so that everyone can use them wihout any hesitation.
+* [Numerical Methods in C Language](https://github.com/singhnir/numerical-methods) : Since all of my previous repositories were specific problem oriented hence I decided to rewrite the program more in a general way so that everyone can use them wihout any hesitation.
 * [Lotka Volterra Population Dynamics](https://github.com/singhnir/lotka-volterra-model) : As for my project I've worked on Lotka Volterra Population Dynamics where I tried to control the population of prey so that the number of prey remains approximately constant prey using a small numbers of predators.
 
 ## Contact
 If you've any doubt or suggestions regarding the project, please feel free to reach out by filing an issue here on github or you can simply email me at [nirsingh124@gmail.com](mailto:nirsingh124@gmail.com). You can also drop a message to my [Telegram](https://t.me/singhnir) account.
 
 ## Acknowledgements
+I would like to thank Ayushi Lamba for sharing her progam whenever needed, Meetesh Joshi for actively engaging in troubleshooting almost every problem and Pritam Chakarborty for tiresomely listening all of my stupid doubts.
 
 ## Licence
 [MIT License](https://github.com/singhnir/DU-MSc-Phy-ANT-Lab/blob/main/LICENSE)
