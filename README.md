@@ -47,7 +47,9 @@ We have been advised to follow the book **[Numerical Analysis Richard L Burden a
 ## Do you want to download all the codes at once?
 ### For Linux user:
 All the linux distributers have git installed in their system so they simply paste the following code in their terminal to get a local copy in your system.  
-`git clone https://github.com/singhnir/DU-MSc-Phy-ANT-Lab.git`
+```
+git clone https://github.com/singhnir/DU-MSc-Phy-ANT-Lab.git
+```
 ### For Windows user:
 Normally no windows has git preinstalled so previous command doesn't work on it but again you can download a zip copy of the codes clicking [**here**](https://github.com/singhnir/DU-MSc-Phy-ANT-Lab/archive/main.zip).
 
